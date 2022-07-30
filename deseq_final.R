@@ -12,8 +12,6 @@ library("tidyverse")
 library(statmod)
 library(ggrepel)
 
-#setwd("C:/Users/Owner/OneDrive - Arizona State University/Documents/TSCdata/march_2022/")
-
 mergeded=read.csv("htseqs_july2022/expressiondata_july2022.csv",sep = ",")
 metadata=read.csv("htseqs_july2022/metadata_LNTS_preDOD_assumptions_minus8_new36_7both.csv",sep=",")
 
@@ -71,8 +69,6 @@ res <- results(ddssva2, contrast=c("condition","severe","mild"),alpha=0.05)
 summary(res)
 resSig <- subset(res, padj < 0.05)
 
-#just used to get LRP5 results
-#resSig <- res[order(res$pvalue),]
 
 #ANNOTATING AND EXPORTING RESULTS
 library("AnnotationDbi")
