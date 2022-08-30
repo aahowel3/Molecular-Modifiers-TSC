@@ -11,3 +11,5 @@ filteringcalls_dbsnp_tester_withsnpeff_ONLYFREQ_short.sh takes the output annota
 
 # Annotating DeepVariant Calls 
 dbnsfp_annotations.sh (in /labs/C4rCD/Naranyan/Sampath/LNTS-DOD/Analysis/dbnsfp_annotations/) takes the files listed in deepvariant_gvcf_list.txt (manually added 35P01 from temp directory to list) and annotates them with 30+ functional databases 
+
+On local computer /Documents/TSCdata/htseqs_july2022 has the most updated expression data combined and the most updated metadata - N007 both severe and N036 both children severe
